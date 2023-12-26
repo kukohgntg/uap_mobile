@@ -2,8 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart'; // Import GetX
-import '../game/audio_manager.dart';
-import '../game/dedes_run.dart';
+import '../controllers/audio_manager.dart';
+import '../controllers/dedes_run.dart';
 import '../models/player_data.dart';
 import 'hud.dart';
 import 'main_menu.dart';

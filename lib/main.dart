@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart'; // Import GetX
 import 'package:hive_flutter/hive_flutter.dart';
 
-import 'app/game/dedes_run.dart';
+import 'app/controllers/dedes_run.dart';
 import 'app/models/player_data.dart';
 import 'app/models/settings.dart';
 import 'app/widgets/game_over_menu.dart';

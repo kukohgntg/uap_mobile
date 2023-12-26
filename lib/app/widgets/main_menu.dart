@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 // import 'package:get/get.dart'; // Import GetX
-import '../game/dedes_run.dart';
+import '../controllers/dedes_run.dart';
 import 'hud.dart';
 import 'settings_menu.dart';
 
