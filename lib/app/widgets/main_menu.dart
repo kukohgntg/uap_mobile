@@ -1,17 +1,14 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-
+// import 'package:get/get.dart'; // Import GetX
 import '../game/dedes_run.dart';
 import 'hud.dart';
 import 'settings_menu.dart';
 
-// Ini overlay untuk layar menu utama.
 class MainMenu extends StatelessWidget {
-  // Identifier unik untuk overlay ini.
   static const id = 'MainMenu';
 
-  // Referensi ke game induk.
   final DedesRun game;
 
   const MainMenu(this.game, {super.key});
@@ -35,18 +32,15 @@ class MainMenu extends StatelessWidget {
                 crossAxisAlignment: WrapCrossAlignment.center,
                 spacing: 10,
                 children: [
-                  const Text(
-                    'NusantaRise ',
-                    style: TextStyle(
-                      fontSize: 50,
-                      color: Colors.white,
-                    ),
-                  ),
+                  Image.asset('assets/images/btn-nusanta/NUSANTARISE.png'),
                   InkWell(
                     onTap: () {
                       game.startGamePlay();
                       game.overlays.remove(MainMenu.id);
                       game.overlays.add(Hud.id);
+                      // Get.back(); // Menutup overlay MainMenu menggunakan GetX
+                      // Get.toNamed(
+                      //     Hud.id); // Menampilkan overlay Hud menggunakan GetX
                     },
                     child: Ink.image(
                       image: const AssetImage(
@@ -60,6 +54,9 @@ class MainMenu extends StatelessWidget {
                     onTap: () {
                       game.overlays.remove(MainMenu.id);
                       game.overlays.add(SettingsMenu.id);
+                      // Get.back(); // Menutup overlay MainMenu menggunakan GetX
+                      // Get.toNamed(SettingsMenu
+                      //     .id); // Menampilkan overlay SettingsMenu menggunakan GetX
                     },
                     child: Ink.image(
                       image: const AssetImage(

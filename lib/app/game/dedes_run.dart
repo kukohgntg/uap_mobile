@@ -76,7 +76,7 @@ class DedesRun extends FlameGame with TapDetector, HasCollisionDetection {
     camera.viewfinder.position = camera.viewport.virtualSize * 0.5;
 
     /// Membuat [ParallaxComponent] dan menambahkannya ke permainan.
-    final parallaxBackground = await loadParallaxComponent(
+    final junggleBackground = await loadParallaxComponent(
       [
         ParallaxImageData('jgl-temple-v3/solid-colour.png'),
         ParallaxImageData('jgl-temple-v3/candi.png'),
@@ -94,7 +94,7 @@ class DedesRun extends FlameGame with TapDetector, HasCollisionDetection {
     );
 
     // Menambahkan parallax sebagai latar belakang.
-    camera.backdrop.add(parallaxBackground);
+    camera.backdrop.add(junggleBackground);
   }
 
   /// Metode ini menambahkan [Dedes] yang sudah dibuat

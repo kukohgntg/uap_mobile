@@ -1,12 +1,12 @@
+import 'package:get/get.dart'; // Import GetX
 import 'package:hive/hive.dart';
-import 'package:flutter/foundation.dart';
 
 // Bagian kode ini merupakan bagian dari penggunaan generator kode Hive.
 part 'settings.g.dart';
 
 // Kelas ini menyimpan pengaturan permainan secara persisten.
 @HiveType(typeId: 1)
-class Settings extends ChangeNotifier with HiveObjectMixin {
+class Settings extends GetxController with HiveObjectMixin {
   // Konstruktor untuk menginisialisasi pengaturan awal.
   Settings({bool bgm = false, bool sfx = false}) {
     _bgm = bgm;
@@ -23,7 +23,7 @@ class Settings extends ChangeNotifier with HiveObjectMixin {
     _bgm = value;
 
     // Memberi tahu pendengar bahwa terjadi perubahan pada pengaturan musik latar.
-    notifyListeners();
+    update();
 
     // Menyimpan data ke penyimpanan persisten menggunakan metode save().
     save();
@@ -39,7 +39,7 @@ class Settings extends ChangeNotifier with HiveObjectMixin {
     _sfx = value;
 
     // Memberi tahu pendengar bahwa terjadi perubahan pada pengaturan efek suara.
-    notifyListeners();
+    update();
 
     // Menyimpan data ke penyimpanan persisten menggunakan metode save().
     save();
