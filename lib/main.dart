@@ -71,7 +71,8 @@ class DedesRunApp extends StatelessWidget {
             child: SizedBox(
               width: 200,
               child:
-                  CircularProgressIndicator(), // Menampilkan indikator loading saat inisialisasi game
+                  // CircularProgressIndicator(),
+                  LinearProgressIndicator(), // Menampilkan indikator loading saat inisialisasi game
             ),
           ),
           overlayBuilderMap: {

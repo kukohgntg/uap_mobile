@@ -2,29 +2,31 @@ name: dedes_run
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
-environment: 
-  sdk: '>=3.1.3 <4.0.0'
+environment:
+  sdk: ">=3.1.3 <4.0.0"
 
-dependencies: 
+dependencies:
   cupertino_icons: ^1.0.2
-  flame: 1.12.0
-  flame_audio: 2.1.5
-  hive: 2.2.3
   get: 4.6.6
-  get_storage: 2.1.1
+  hive: 2.2.3
   hive_flutter: 1.1.0
-  flutter: 
+  flame: 1.13.1
+  flame_audio: 2.1.6
+  mockito: ^5.4.4
+  flutter:
     sdk: flutter
 
-dev_dependencies: 
+dev_dependencies:
   hive_generator: 2.0.1
-  build_runner: 2.4.7
+  build_runner: ^2.4.7
   flutter_lints: 3.0.1
-  flutter_test: 
+  integration_test:
+    sdk: flutter
+  flutter_test:
     sdk: flutter
 
-flutter: 
-  assets: 
+flutter:
+  assets:
     - assets/images/
     - assets/images/jgl-temple-v3/
     - assets/images/AngryPig/
@@ -32,9 +34,8 @@ flutter:
     - assets/images/Rino/
     - assets/images/btn-nusanta/
     - assets/audio/
-  fonts: 
+  fonts:
     - family: Audiowide
-      fonts: 
+      fonts:
         - asset: assets/fonts/Audiowide/Audiowide-Regular.ttf
   uses-material-design: true
-
