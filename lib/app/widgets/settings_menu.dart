@@ -1,3 +1,11 @@
+/// File: settings_menu.dart
+///
+/// Deskripsi:
+///   File ini berisi implementasi kelas SettingsMenu, yang merupakan bagian dari antarmuka pengguna
+///   untuk menu pengaturan permainan DedesRun. Kelas ini memungkinkan pemain untuk mengonfigurasi
+///   pengaturan suara permainan seperti latar belakang dan efek suara.
+///
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -44,6 +52,7 @@ class SettingsMenu extends StatelessWidget {
                         ),
                         value: settings.bgm,
                         onChanged: (bool value) {
+                          // Mengubah pengaturan latar belakang musik (BGM) berdasarkan nilai switch.
                           settings.bgm = value;
                           if (value) {
                             AudioManager.instance
@@ -62,15 +71,15 @@ class SettingsMenu extends StatelessWidget {
                         ),
                         value: settings.sfx,
                         onChanged: (bool value) {
+                          // Mengubah pengaturan efek suara berdasarkan nilai switch.
                           settings.sfx = value;
                         },
                       ),
                       InkWell(
                         onTap: () {
+                          // Kembali ke menu utama saat tombol "OUT" ditekan.
                           game.overlays.remove(SettingsMenu.id);
                           game.overlays.add(MainMenu.id);
-                          // Get.back(); // Menutup overlay SettingsMenu menggunakan GetX
-                          // Get.toNamed(MainMenu.id); // Menampilkan overlay MainMenu menggunakan GetX
                         },
                         child: Ink.image(
                           image: const AssetImage(

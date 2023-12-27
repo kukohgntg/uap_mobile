@@ -1,8 +1,26 @@
-import 'package:flame/collisions.dart';
-import 'package:flame/components.dart';
+/// File: enemy.dart
+///
+/// Deskripsi:
+///   File ini berisi definisi kelas `Enemy` yang mewakili karakter musuh
+///   dalam dunia permainan menggunakan game engine Flame. Musuh ini adalah
+///   bagian dari proyek yang menggabungkan Flame, Hive untuk database lokal,
+///   dan GetX untuk manajemen state.
+///
+/// Import:
+///   - 'package:flame/collisions.dart': Import Flame untuk mendukung deteksi tabrakan.
+///   - 'package:flame/components.dart': Import Flame untuk komponen-komponen game.
+///
+/// Class:
+///   - 'Enemy': Kelas ini mewakili musuh dalam dunia permainan. Menggunakan
+///     Flame SpriteAnimationComponent untuk animasi, Flame CollisionCallbacks
+///     untuk deteksi tabrakan, dan Flame HasGameReference untuk referensi ke game.
+///
 
-import '../models/enemy_data.dart';
-import 'dedes_run.dart';
+import 'package:flame/collisions.dart'; // Deteksi tabrakan Flame.
+import 'package:flame/components.dart'; // Komponen-komponen game Flame.
+
+import '../models/enemy_data.dart'; // Import model data musuh.
+import 'dedes_run.dart'; // Import objek game DedesRun.
 
 // Ini mewakili musuh dalam dunia permainan.
 class Enemy extends SpriteAnimationComponent
@@ -10,7 +28,9 @@ class Enemy extends SpriteAnimationComponent
   // Data yang diperlukan untuk pembuatan musuh ini.
   final EnemyData enemyData;
 
+  /// Konstruktor untuk membuat objek musuh.
   Enemy(this.enemyData) {
+    // Membuat animasi musuh berdasarkan data yang diberikan.
     animation = SpriteAnimation.fromFrameData(
       enemyData.image,
       SpriteAnimationData.sequenced(

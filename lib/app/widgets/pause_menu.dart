@@ -1,3 +1,10 @@
+/// File: pause_menu.dart
+///
+/// Deskripsi:
+///   File ini berisi implementasi kelas PauseMenu, yang bertanggung jawab untuk menampilkan
+///   overlay saat permainan dijeda (pause) dengan opsi untuk melanjutkan, mereset, atau kembali ke menu utama.
+///
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -48,11 +55,9 @@ class PauseMenu extends StatelessWidget {
                       ),
                       InkWell(
                         onTap: () {
+                          // Melanjutkan permainan dengan menutup overlay PauseMenu dan kembali ke overlay Hud.
                           game.overlays.remove(PauseMenu.id);
                           game.overlays.add(Hud.id);
-                          // Get.back(); // Menutup overlay PauseMenu menggunakan GetX
-                          // Get.toNamed(Hud
-                          //     .id); // Menampilkan overlay Hud menggunakan GetX
                           game.resumeEngine();
                           AudioManager.instance.resumeBgm();
                         },
@@ -66,11 +71,9 @@ class PauseMenu extends StatelessWidget {
                       ),
                       InkWell(
                         onTap: () {
+                          // Me-reset permainan dan memulainya kembali setelah menutup overlay PauseMenu dan membuka overlay Hud.
                           game.overlays.remove(PauseMenu.id);
                           game.overlays.add(Hud.id);
-                          // Get.back(); // Menutup overlay PauseMenu menggunakan GetX
-                          // Get.toNamed(Hud
-                          //     .id); // Menampilkan overlay Hud menggunakan GetX
                           game.resumeEngine();
                           game.reset();
                           game.startGamePlay();
@@ -86,11 +89,9 @@ class PauseMenu extends StatelessWidget {
                       ),
                       InkWell(
                         onTap: () {
+                          // Kembali ke menu utama setelah menutup overlay PauseMenu dan membuka overlay MainMenu.
                           game.overlays.remove(PauseMenu.id);
                           game.overlays.add(MainMenu.id);
-                          // Get.back(); // Menutup overlay PauseMenu menggunakan GetX
-                          // Get.toNamed(MainMenu
-                          //     .id); // Menampilkan overlay MainMenu menggunakan GetX
                           game.resumeEngine();
                           game.reset();
                           AudioManager.instance.resumeBgm();

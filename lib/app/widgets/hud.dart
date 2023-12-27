@@ -1,3 +1,10 @@
+/// File: hud.dart
+///
+/// Deskripsi:
+///   File ini berisi implementasi kelas Hud, yang merupakan antarmuka pengguna untuk menampilkan
+///   informasi permainan saat berlangsung, seperti skor pemain, jumlah nyawa, dan tombol menu pause.
+///
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart'; // Import GetX
 import '../controllers/audio_manager.dart';
@@ -25,6 +32,7 @@ class Hud extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () {
+                  // Menampilkan overlay PauseMenu dan menjeda permainan.
                   game.overlays.remove(Hud.id);
                   game.overlays.add(PauseMenu.id);
                   game.pauseEngine();
@@ -47,6 +55,7 @@ class Hud extends StatelessWidget {
               ),
               Row(
                 children: List.generate(5, (index) {
+                  // Menampilkan ikon hati (lives) sesuai dengan jumlah nyawa pemain.
                   if (index < playerData.lives) {
                     return const Icon(
                       Icons.favorite,

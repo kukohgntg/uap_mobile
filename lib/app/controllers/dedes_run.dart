@@ -1,3 +1,11 @@
+/// File: dedes_run.dart
+///
+/// Deskripsi:
+///   File ini berisi implementasi kelas DedesRun, yang merupakan kelas utama permainan menggunakan Flame.
+///   DedesRun menggabungkan beberapa fitur seperti parallax background, input handling, dan
+///   pengelolaan state permainan.
+///
+
 import 'package:flame/events.dart';
 import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
@@ -76,7 +84,7 @@ class DedesRun extends FlameGame with TapDetector, HasCollisionDetection {
     camera.viewfinder.position = camera.viewport.virtualSize * 0.5;
 
     /// Membuat [ParallaxComponent] dan menambahkannya ke permainan.
-    final junggleBackground = await loadParallaxComponent(
+    final jungleBackground = await loadParallaxComponent(
       [
         ParallaxImageData('jgl-temple-v3/solid-colour.png'),
         ParallaxImageData('jgl-temple-v3/candi.png'),
@@ -94,7 +102,7 @@ class DedesRun extends FlameGame with TapDetector, HasCollisionDetection {
     );
 
     // Menambahkan parallax sebagai latar belakang.
-    camera.backdrop.add(junggleBackground);
+    camera.backdrop.add(jungleBackground);
   }
 
   /// Metode ini menambahkan [Dedes] yang sudah dibuat

@@ -1,11 +1,19 @@
-import 'dart:ui';
-import 'package:flame/collisions.dart';
-import 'package:flame/components.dart';
+/// File: dedes.dart
+///
+/// Deskripsi:
+///   File ini berisi definisi kelas `Dedes` yang merepresentasikan karakter utama
+///   dalam permainan ini. Kelas ini menggunakan animasi sprite dan mengimplementasikan
+///   collision callbacks untuk interaksi dengan objek lain dalam permainan.
+///
 
-import '../models/player_data.dart';
-import 'audio_manager.dart';
-import 'dedes_run.dart';
-import 'enemy.dart';
+import 'dart:ui'; // Import pustaka dasar UI.
+import 'package:flame/collisions.dart'; // Import pustaka Flame untuk collision.
+import 'package:flame/components.dart'; // Import komponen-komponen Flame.
+
+import '../models/player_data.dart'; // Import model data pemain.
+import 'audio_manager.dart'; // Import manajer audio.
+import 'dedes_run.dart'; // Import objek game DedesRun.
+import 'enemy.dart'; // Import kelas musuh.
 
 /// Enum ini merepresentasikan keadaan animasi dari [Dedes].
 enum DedesAnimationStates {

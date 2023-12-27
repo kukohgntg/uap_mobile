@@ -1,10 +1,25 @@
-import 'dart:math';
+/// File: enemy_manager.dart
+///
+/// Deskripsi:
+///   File ini berisi definisi kelas `EnemyManager` yang bertanggung jawab
+///   untuk membuat musuh secara acak pada interval waktu tertentu tergantung
+///   pada skor pemain saat ini. Kelas ini menggunakan game engine Flame,
+///   database Hive, dan manajemen state GetX.
+///
+/// Import:
+///   - 'dart:math': Import pustaka dart:math untuk penggunaan kelas Random.
+///   - 'package:flame/components.dart': Import Flame untuk komponen-komponen game.
+///
+/// Class:
+///   - 'EnemyManager': Kelas ini membuat dan mengelola musuh-musuh dalam permainan.
+///
 
-import 'package:flame/components.dart';
+import 'dart:math'; // Pustaka dart:math untuk kelas Random.
+import 'package:flame/components.dart'; // Komponen-komponen game Flame.
 
-import '../models/enemy_data.dart';
-import 'dedes_run.dart';
-import 'enemy.dart';
+import '../models/enemy_data.dart'; // Import model data musuh.
+import 'dedes_run.dart'; // Import objek game DedesRun.
+import 'enemy.dart'; // Import kelas Enemy.
 
 // Kelas ini bertanggung jawab untuk membuat musuh secara acak pada
 // interval waktu tertentu tergantung pada skor pemain saat ini.
@@ -18,13 +33,14 @@ class EnemyManager extends Component with HasGameReference<DedesRun> {
   // Timer untuk menentukan kapan musuh selanjutnya akan muncul.
   final Timer _timer = Timer(2, repeat: true);
 
+  // Konstruktor untuk mengatur timer pada saat pembuatan objek EnemyManager.
   EnemyManager() {
     _timer.onTick = spawnRandomEnemy;
   }
 
   // Metode ini bertanggung jawab untuk membuat musuh secara acak.
   void spawnRandomEnemy() {
-    /// Menghasilkan indeks acak dalam [_data] dan mendapatkan [EnemyData].
+    // Menghasilkan indeks acak dalam [_data] dan mendapatkan [EnemyData].
     final randomIndex = _random.nextInt(_data.length);
     final enemyData = _data.elementAt(randomIndex);
     final enemy = Enemy(enemyData);
@@ -84,16 +100,17 @@ class EnemyManager extends Component with HasGameReference<DedesRun> {
         ),
       ]);
     }
-    _timer.start();
+    _timer.start(); // Mulai timer.
     super.onMount();
   }
 
   @override
   void update(double dt) {
-    _timer.update(dt);
+    _timer.update(dt); // Perbarui timer.
     super.update(dt);
   }
 
+  // Metode untuk menghapus semua musuh dari layar.
   void removeAllEnemies() {
     final enemies = game.world.children.whereType<Enemy>();
     for (var enemy in enemies) {
