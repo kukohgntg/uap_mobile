@@ -194,7 +194,4 @@ class DedesRunApp extends StatelessWidget {
 - Menggunakan `GetMaterialApp` dan `GameWidget<DedesRun>.controlled` untuk menampilkan game.
 - Menginisialisasi Hive, mendaftarkan adapter, dan menyiapkan konfigurasi tampilan aplikasi.
 
-```
-
-Dengan dokumentasi ini, diharapkan memudahkan pemahaman dan pengembangan lebih lanjut pada proyek "Dedes Run".
-```
+### Dengan dokumentasi ini, diharapkan memudahkan pemahaman dan pengembangan lebih lanjut pada proyek "Dedes Run".
