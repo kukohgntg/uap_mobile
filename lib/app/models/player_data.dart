@@ -1,19 +1,20 @@
 /// File: player_data.dart
 ///
 /// Deskripsi:
-///   File ini berisi definisi kelas `PlayerData` yang digunakan untuk merepresentasikan
+///   File ini berisi definisi kelas [PlayerData] yang digunakan untuk merepresentasikan
 ///   data pemain dalam game. Kelas ini mengimplementasikan fungsi-fungsi untuk
 ///   manajemen skor, nyawa, serta menggunakan GetX untuk manajemen state, dan Hive
 ///   untuk penyimpanan data lokal.
 ///
 /// Import:
-///   - `get/get.dart`: Import paket GetX untuk manajemen state.
-///   - `hive/hive.dart`: Import paket Hive untuk penyimpanan data lokal.
+///   - `get/get.dart`: Import paket [GetX] untuk manajemen state.
+///   - `hive/hive.dart`: Import paket [Hive] untuk penyimpanan data lokal.
 ///
 /// Part:
-///   - `player_data.g.dart`: File ini digenerate otomatis oleh Hive untuk
-///     membantu serialisasi/deserialisasi objek `PlayerData`.
+///   - `player_data.g.dart`: File ini digenerate otomatis oleh [Hive] untuk
+///     membantu serialisasi/deserialisasi objek [PlayerData].
 ///
+library;
 
 import 'package:get/get.dart'; // Import GetX untuk manajemen state.
 import 'package:hive/hive.dart'; // Import Hive untuk penyimpanan data lokal.

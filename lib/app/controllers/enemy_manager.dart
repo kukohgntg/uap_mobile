@@ -1,7 +1,7 @@
 /// File: enemy_manager.dart
 ///
 /// Deskripsi:
-///   File ini berisi definisi kelas `EnemyManager` yang bertanggung jawab
+///   File ini berisi definisi kelas [EnemyManager] yang bertanggung jawab
 ///   untuk membuat musuh secara acak pada interval waktu tertentu tergantung
 ///   pada skor pemain saat ini. Kelas ini menggunakan game engine Flame,
 ///   database Hive, dan manajemen state GetX.
@@ -13,6 +13,7 @@
 /// Class:
 ///   - 'EnemyManager': Kelas ini membuat dan mengelola musuh-musuh dalam permainan.
 ///
+library;
 
 import 'dart:math'; // Pustaka dart:math untuk kelas Random.
 import 'package:flame/components.dart'; // Komponen-komponen game Flame.

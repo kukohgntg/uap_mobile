@@ -1,10 +1,11 @@
 /// File: settings_menu.dart
 ///
 /// Deskripsi:
-///   File ini berisi implementasi kelas SettingsMenu, yang merupakan bagian dari antarmuka pengguna
-///   untuk menu pengaturan permainan DedesRun. Kelas ini memungkinkan pemain untuk mengonfigurasi
+///   File ini berisi implementasi kelas [SettingsMenu], yang merupakan bagian dari antarmuka pengguna
+///   untuk menu pengaturan permainan [DedesRun]. Kelas ini memungkinkan pemain untuk mengonfigurasi
 ///   pengaturan suara permainan seperti latar belakang dan efek suara.
 ///
+library;
 
 import 'dart:ui';
 

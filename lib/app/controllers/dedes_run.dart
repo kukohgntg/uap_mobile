@@ -1,10 +1,11 @@
 /// File: dedes_run.dart
 ///
 /// Deskripsi:
-///   File ini berisi implementasi kelas DedesRun, yang merupakan kelas utama permainan menggunakan Flame.
-///   DedesRun menggabungkan beberapa fitur seperti parallax background, input handling, dan
+///   File ini berisi implementasi kelas [DedesRun], yang merupakan kelas utama permainan menggunakan Flame.
+///   [DedesRun] menggabungkan beberapa fitur seperti parallax background, input handling, dan
 ///   pengelolaan state permainan.
 ///
+library;
 
 import 'package:flame/events.dart';
 import 'package:flame/flame.dart';

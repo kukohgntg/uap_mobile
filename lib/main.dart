@@ -1,9 +1,10 @@
 /// File: main.dart
 ///
 /// Deskripsi:
-///   File ini adalah titik masuk utama untuk aplikasi "Dedes Run" yang dibangun dengan Flutter dan Flame.
-///   Aplikasi ini menggunakan game engine Flame, database Hive, dan state management GetX.
+///   File ini adalah titik masuk utama untuk aplikasi [DedesRun] yang dibangun dengan Flutter dan Flame.
+///   Aplikasi ini menggunakan game engine [Flame], database [Hive], dan state management [GetX].
 ///
+library;
 
 // Import beberapa pustaka yang diperlukan
 import 'package:flame/camera.dart';

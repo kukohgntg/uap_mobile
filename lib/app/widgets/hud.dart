@@ -1,9 +1,10 @@
 /// File: hud.dart
 ///
 /// Deskripsi:
-///   File ini berisi implementasi kelas Hud, yang merupakan antarmuka pengguna untuk menampilkan
+///   File ini berisi implementasi kelas [Hud], yang merupakan antarmuka pengguna untuk menampilkan
 ///   informasi permainan saat berlangsung, seperti skor pemain, jumlah nyawa, dan tombol menu pause.
 ///
+library;
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart'; // Import GetX

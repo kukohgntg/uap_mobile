@@ -1,10 +1,11 @@
 /// File: dedes.dart
 ///
 /// Deskripsi:
-///   File ini berisi definisi kelas `Dedes` yang merepresentasikan karakter utama
+///   File ini berisi definisi kelas [Dedes] yang merepresentasikan karakter utama
 ///   dalam permainan ini. Kelas ini menggunakan animasi sprite dan mengimplementasikan
 ///   collision callbacks untuk interaksi dengan objek lain dalam permainan.
 ///
+library;
 
 import 'dart:ui'; // Import pustaka dasar UI.
 import 'package:flame/collisions.dart'; // Import pustaka Flame untuk collision.

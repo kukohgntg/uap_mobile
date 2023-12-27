@@ -1,11 +1,12 @@
 /// File: audio_manager.dart
 ///
 /// Deskripsi:
-///   File ini berisi definisi kelas `AudioManager` yang berfungsi sebagai antarmuka
+///   File ini berisi definisi kelas [AudioManager] yang berfungsi sebagai antarmuka
 ///   pengelolaan audio antara objek [DedesRun] dan API audio dari engine [Flame].
 ///   Kelas ini memungkinkan pengendalian pemutaran musik latar (BGM) dan efek suara (SFX)
-///   dalam permainan menggunakan pustaka Flame dan Flame Audio.
+///   dalam permainan menggunakan pustaka [Flame] dan [FlameAudio].
 ///
+library;
 
 import 'dedes_run.dart'; // Import objek game DedesRun.
 import '../models/settings.dart'; // Import model data pengaturan.

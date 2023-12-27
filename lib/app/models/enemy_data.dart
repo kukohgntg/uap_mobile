@@ -1,13 +1,14 @@
 /// File: enemy_data.dart
 ///
 /// Deskripsi:
-///   File ini berisi definisi kelas `EnemyData` yang digunakan untuk
+///   File ini berisi definisi kelas [EnemyData] yang digunakan untuk
 ///   menyimpan semua data yang diperlukan dalam pembuatan musuh dalam permainan.
 ///
 /// Import:
 ///   - `flame/extensions.dart`: Import paket Flame untuk penggunaan extension dan
 ///     fungsionalitas tambahan dalam pengembangan game.
 ///
+library;
 
 import 'package:flame/extensions.dart';
 

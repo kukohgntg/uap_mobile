@@ -1,9 +1,10 @@
 /// File: pause_menu.dart
 ///
 /// Deskripsi:
-///   File ini berisi implementasi kelas PauseMenu, yang bertanggung jawab untuk menampilkan
+///   File ini berisi implementasi kelas [PauseMenu], yang bertanggung jawab untuk menampilkan
 ///   overlay saat permainan dijeda (pause) dengan opsi untuk melanjutkan, mereset, atau kembali ke menu utama.
 ///
+library;
 
 import 'dart:ui';
 

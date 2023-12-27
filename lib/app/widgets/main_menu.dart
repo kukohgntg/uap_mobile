@@ -1,10 +1,11 @@
 /// File: main_menu.dart
 ///
 /// Deskripsi:
-///   File ini berisi implementasi kelas MainMenu, yang merupakan bagian dari antarmuka pengguna
-///   utama untuk permainan DedesRun. Kelas ini menyediakan tampilan menu utama permainan
+///   File ini berisi implementasi kelas [MainMenu], yang merupakan bagian dari antarmuka pengguna
+///   utama untuk permainan [DedesRun]. Kelas ini menyediakan tampilan menu utama permainan
 ///   dengan opsi untuk memulai permainan atau masuk ke menu pengaturan.
 ///
+library;
 
 import 'dart:ui';
 

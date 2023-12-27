@@ -1,9 +1,10 @@
 /// File: game_over_menu.dart
 ///
 /// Deskripsi:
-///   File ini berisi implementasi kelas GameOverMenu, yang bertanggung jawab untuk menampilkan
+///   File ini berisi implementasi kelas [GameOverMenu], yang bertanggung jawab untuk menampilkan
 ///   overlay ketika permainan berakhir dengan opsi untuk memulai permainan baru atau kembali ke menu utama.
 ///
+library;
 
 import 'dart:ui';
 

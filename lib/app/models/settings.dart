@@ -6,13 +6,14 @@
 ///   GetX untuk manajemen state dan Hive untuk penyimpanan data lokal.
 ///
 /// Import:
-///   - `get/get.dart`: Import paket GetX untuk manajemen state.
-///   - `hive/hive.dart`: Import paket Hive untuk penyimpanan data lokal.
+///   - `get/get.dart`: Import paket [GetX] untuk manajemen state.
+///   - `hive/hive.dart`: Import paket [Hive] untuk penyimpanan data lokal.
 ///
 /// Part:
-///   - `settings.g.dart`: File ini digenerate otomatis oleh Hive untuk
-///     membantu serialisasi/deserialisasi objek `Settings`.
+///   - `settings.g.dart`: File ini digenerate otomatis oleh [Hive] untuk
+///     membantu serialisasi/deserialisasi objek [Settings].
 ///
+library;
 
 import 'package:get/get.dart'; // Import GetX untuk manajemen state.
 import 'package:hive/hive.dart';
@@ -20,7 +21,7 @@ import 'package:hive/hive.dart';
 // Bagian kode ini merupakan bagian dari penggunaan generator kode Hive.
 part 'settings.g.dart';
 
-/// Kelas `Settings` menyimpan pengaturan permainan secara persisten.
+/// Kelas [Settings] menyimpan pengaturan permainan secara persisten.
 @HiveType(typeId: 1)
 class Settings extends GetxController with HiveObjectMixin {
   /// Konstruktor untuk menginisialisasi pengaturan awal.

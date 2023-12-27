@@ -1,7 +1,7 @@
 /// File: enemy.dart
 ///
 /// Deskripsi:
-///   File ini berisi definisi kelas `Enemy` yang mewakili karakter musuh
+///   File ini berisi definisi kelas [Enemy] yang mewakili karakter musuh
 ///   dalam dunia permainan menggunakan game engine Flame. Musuh ini adalah
 ///   bagian dari proyek yang menggabungkan Flame, Hive untuk database lokal,
 ///   dan GetX untuk manajemen state.
@@ -15,7 +15,7 @@
 ///     Flame SpriteAnimationComponent untuk animasi, Flame CollisionCallbacks
 ///     untuk deteksi tabrakan, dan Flame HasGameReference untuk referensi ke game.
 ///
-
+library;
 import 'package:flame/collisions.dart'; // Deteksi tabrakan Flame.
 import 'package:flame/components.dart'; // Komponen-komponen game Flame.
 
